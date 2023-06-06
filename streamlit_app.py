@@ -97,7 +97,8 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
                     df = df[df[column].str.contains(user_text_input)]
 
     return df
-df = pd.read_csv("D:\\Noor\\Data\\Processed\\BehaviourData_Users_Cluster.csv")
+
+df = pd.read_csv(Path.cwd()/"BehaviourData_Users_Cluster.csv")
 
 
 with ENAGED_TAB:
